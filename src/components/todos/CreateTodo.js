@@ -4,8 +4,14 @@ class CreateTodo extends Component {
   render() {
     return(
       <div>
-        Create Todo Component
-      </div>
+      <form>
+        <p>
+          <label>add todo</label>
+          <input type="text" onChange={(event) => this.handleChange(event)}/>
+        </p>
+        <input type="submit" />
+      </form>
+    </div>
     )
   }
 }
